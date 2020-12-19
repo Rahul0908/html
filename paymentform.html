@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form action="">
+    <h1>Payment Form</h1>
+    <h4>* Fields are required</h4>
+   <fieldset><legend><h2>Personal Information</h2></legend>
+    <p>First Name : * <input type="text" name ="f_name" required ></p>
+    <p>Last Name : * <input type="text"name ="l_name"required</p>
+    <p>Email id : * <input type="email" name="email" id=""required></p>
+    <p>Phone No : * <input type="number" name="number" id="number"required></p>
+</fieldset> 
+    <fieldset>
+        <legend>  <p>Gender : *</p></legend>
+        
+            
+           Male <input type="radio" name="gender" id="Male"required><br>
+           Female <input type="radio" name="gender" id="Female"required><br>
+            Other <input type="radio" name="gender" id="other"required><br>
+    </fieldset>
+    <p>Pincode : *</p><input type="number" name="pincode" id="pincode"required><br>
+    <p>Address : *</p> <textarea name="address" id="address" cols="167" rows="5">
+      
+    </textarea>
+    <fieldset>
+        <legend>Card Details</legend>
+        <p>Card type : 
+            <select name="card_type" id="card_type">
+                <option value=""required>--select a card type--</option>
+                <option value="Master card"required>Master card</option>
+                <option value="rupay card"required>Rupay card</option>
+                <option value="Debit card"required>Debit card</option>
+                <option value="Credit card"required>Credit card</option>
+
+                
+            </select>
+
+        </p>
+        Name On Card : * <input type="text"required><br><br>
+        Card Number : * <input type="number" name="card_no" id="card_no"required><br><br>
+        Expiery Date : * <input type="date" name="exp" id="exp"required>
+        CVV : *<input type="password" name="cvv" id="cvv"required>
+    </fieldset>
+   <p><input type="submit" value="Pay Now"></p> 
+</form>
+</body>
+</html>
